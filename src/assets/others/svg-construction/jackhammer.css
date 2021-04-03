@@ -1,0 +1,68 @@
+#jackhammerSVG{
+	height:275px;	
+	width:100%;
+}
+
+#jackhammer_title{
+	font-size: 1.75em;
+	font-weight: normal;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	line-height: 125%;
+}
+
+#jackhammer_countdown{
+	color:#ffffff;
+	fill:#ffffff;
+}
+
+.jhcount{
+	font-size: 4em;
+}
+
+.jhtime{
+	fill:#ffffff;
+	 text-anchor:middle;
+}
+
+.jackhammer_clear{
+	clear:both;
+}
+
+#svg_countdown{
+	overflow: visible;
+}
+
+#jackhammer_socialmedia{
+	margin-top: 1.75em;
+	text-align: center;
+}
+
+#jackhammer_socialmedia ul{
+	list-style: none;
+	padding: 0;
+}
+
+#jackhammer_socialmedia li{
+	display: inline;
+}
+
+#jackhammer_socialmedia img{
+	height:3em;
+	width:3em;
+	margin: 0 .25em;
+	opacity: 1;
+	border:0;
+}
+
+#jackhammer_socialmedia a {
+	outline:none;
+}
+
+#jackhammer_socialmedia a img{
+	outline:none;
+}
+
+#jackhammer_socialmedia img:hover{
+	opacity: .75;
+}

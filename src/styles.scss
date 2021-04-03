@@ -1,0 +1,365 @@
+//@import "../../node_modules/intl-tel-input/build/css/intlTelInput.css";
+//@import "../../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+//@import "../../node_modules/@ng-select/ng-select/themes/default.theme.css";
+//@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+//@import "../../node_modules/ngx-toastr/toastr.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "../src/assets/themes/argon/argon.css";
+
+.country-dropdown.show {
+  inset: auto auto auto auto !important;
+  position: fixed;
+}
+
+@media print {
+  @page {
+    margin: 50px;
+  }
+
+  .pagebreak {
+    page-break-before: always;
+    break-after: always;
+    clear: both;
+  }
+}
+
+.show-in-print {
+  display: none;
+}
+
+.select2-selection__rendered {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+  height: 2em !important;
+  line-height: 26px !important;
+  overflow: hidden !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+pleno-front-loading {
+  opacity: 0.95;
+  z-index: 99999;
+  position: fixed;
+}
+
+.swal2-container {
+  z-index: 999999 !important;
+}
+
+ng-select {
+  .ng-select-container {
+    padding: 23px 0px;
+
+    .ng-input input {
+      height: 35px;
+    }
+  }
+
+  &.is-invalid {
+    .ng-select-container {
+      border: 1px solid #f66340;
+    }
+  }
+
+  &.ng-select-disabled {
+    & > .ng-select-container {
+      background-color: #e9ecef !important;
+      color: #8898aa;
+    }
+  }
+}
+
+.ng-dropdown-panel.ng-select-top {
+  margin-bottom: 20px !important;
+}
+
+ng-select.ng-select-multiple {
+  .ng-select-container {
+    padding: 1px;
+    line-height: 35px;
+  }
+}
+
+ng-dropdown-panel {
+  z-index: 99999 !important;
+}
+
+#appendSelect,
+#appendSelectPessoa {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mat-tab-label-container {
+  overflow-x: auto !important;
+}
+
+.modal .modal-content {
+  max-height: 85vh;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px !important;
+  }
+}
+
+.upload {
+  .avatar-container {
+    border: 2px solid #efefef;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+}
+
+.avatar-container {
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    object-fit: contain;
+    border: unset !important;
+  }
+}
+
+.nav-pills .nav-link {
+  color: #172b4d !important;
+  background-color: #fff !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff !important;
+  background-color: #172b4d !important;
+}
+
+.tab-vistoria.unique {
+  max-width: 200px;
+}
+
+.nav-pills {
+  display: flex !important;
+  width: 100% !important;
+  overflow-x: auto !important;
+  flex-wrap: nowrap !important;
+  flex-direction: row !important;
+
+  @media (max-width: 1200px) {
+    li {
+      margin: 5px;
+    }
+  }
+}
+
+.mat-form-field-suffix .vertical {
+  position: absolute;
+  right: -10px;
+  top: -47px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  table.table-mobile {
+    border: 0;
+
+    caption {
+      font-size: 1.3em;
+    }
+
+    thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: 0.625em;
+    }
+
+    td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: 0.8em;
+      text-align: right;
+    }
+
+    td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+.mat-dialog-container {
+  background-color: #fff !important;
+  box-shadow: initial !important;
+}
+
+.mat-icon,
+.material-icons {
+  vertical-align: sub;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-subscript-wrapper {
+  padding: 0 !important;
+  top: calc(100% - 2.3em);
+}
+
+.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid mat-icon {
+  color: #f44336 !important;
+}
+
+ckeditor {
+  display: block;
+  border: 1px solid #efefef;
+  width: 100%;
+}
+
+.ck-editor__editable {
+  max-height: 300px !important;
+  min-height: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  .cdk-overlay-pane {
+    max-width: 90% !important;
+    width: 100% !important;
+  }
+}
+
+.cdk-drag-handle {
+  cursor: move !important;
+}
+
+.nav-pills .nav-link {
+  white-space: nowrap;
+}
+
+.is-invalid {
+  ngx-intl-tel-input {
+    input {
+      border-color: #fb6340;
+    }
+  }
+}
+
+.table-responsive.fixedHeader {
+  max-height: 80vh;
+  overflow-y: auto;
+
+  th {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media print {
+  .table-responsive.fixedHeader {
+    max-height: unset;
+
+    th {
+      position: inherit;
+      top: unset;
+    }
+  }
+}
+
+.angular-pre-wrap {
+  white-space: pre-line;
+}
+
+.nav.nav-pills {
+  > li.disabled {
+    pointer-events: none;
+
+    a {
+      color: silver !important;
+    }
+  }
+
+  > li.semi-disabled {
+    cursor: pointer;
+  }
+}
+
+.mat-form-field-prefix i {
+  font-size: 20px;
+  width: 24px;
+  height: 24px;
+  float: left;
+  vertical-align: middle;
+  font-weight: 400;
+  text-align: center;
+  line-height: 28px;
+}
+
+pleno-front-menu .avatar-container {
+  width: 135px !important;
+  height: 135px !important;
+  display: block;
+  margin: auto;
+}
+
+.navbar-vertical .navbar-nav {
+  counter-reset: item 0;
+
+  li {
+    counter-increment: item;
+
+    span:before {
+      content: counter(item) ".";
+      display: inline;
+      margin-right: 5px;
+    }
+
+    .collapse {
+      counter-reset: subItem 0;
+
+      li {
+        counter-increment: subItem;
+
+        a:before {
+          display: inline;
+          content: counter(item) "." counter(subItem);
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
